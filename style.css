@@ -28,7 +28,7 @@ body {
   font-family: 'Overpass';
   background: var(--grey-background);
   max-width: 1400px;
-  padding: 24px;
+  padding: 0 24px;
 }
 
 .container {
