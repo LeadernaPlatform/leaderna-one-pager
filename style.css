@@ -136,7 +136,7 @@ header {
 }
 
 .navigation-container a {
-  color: blue;
+  color: var(--blue-font);
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -444,7 +444,7 @@ li .social-media {
 .circle {
   height: 7.5px;
   width: 7.5px;
-  background-color: blue;
+  background-color: var(--blue-font);
   border-radius: 100%;
   margin-left: 10px;
 }
@@ -534,8 +534,9 @@ li .social-media {
   grid-column-start: 2;
   justify-self: flex-end;
   top: -105px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  right: 9.766%;
+  padding-left: 20.613%;
+  padding-right: 20.613%;
 }
 
 .study-conduct-container .title-container p {
@@ -665,8 +666,8 @@ li .social-media {
 
 @media screen and (min-width: 1600px) {
   .study-conduct-container .title-container {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    /* padding-left: 10rem;
+    padding-right: 10rem; */
   }
 }
 
@@ -720,7 +721,7 @@ li .social-media {
 }
 
 .sac-title-container p:last-of-type {
-  color: #0381ff;
+  color: var(--blue-font);
   font-size: 3em;
 }
 
@@ -741,7 +742,7 @@ li .social-media {
 }
 
 .sac-image-text {
-  color: #0381ff;
+  color: var(--blue-font);
   font-size: 1.4em;
   text-align: center;
 }
@@ -2787,7 +2788,6 @@ div.maps-for-research-zoom:nth-of-type(1) {
   top: 0;
   left: 0;
   width: 100%;
-  shape-renderer: crispEdges;
 }
 
 .contact-content {
