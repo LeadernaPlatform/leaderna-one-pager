@@ -273,10 +273,6 @@ li .social-media {
     margin-left: 1.5em;
   }
 
-  .navigation-container .single-tab p {
-    margin: 0;
-  }
-
   .social-media {
     grid-template-columns: repeat(3, 20px);
     gap: 15px;
