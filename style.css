@@ -859,6 +859,9 @@ li .social-media {
   width: 100%;
   object-fit: cover;
 }
+div.image-container.man img {
+  min-height: 1200px;
+}
 
 .second-column {
   display: flex;
@@ -880,6 +883,8 @@ li .social-media {
 
 .oss-text-container {
   z-index: 1000;
+  padding-top: 75px;
+  padding-bottom: 200px;
 }
 
 .first-part,
@@ -887,23 +892,23 @@ li .social-media {
   color: #fff;
   z-index: 1001;
   text-align: right;
-  padding-right: 15px;
+  padding-right: 200px;
 }
 
 .first-part {
-  font-size: 12px;
+  font-size: 4.5rem;
   font-weight: 100;
 }
 
 .second-part {
-  font-size: 15px;
+  font-size: 5.5rem;
   font-weight: 500;
 }
 
 .text-container-background {
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 485px;
   z-index: 1001;
   width: 100%;
 }
@@ -915,14 +920,14 @@ li .social-media {
     margin-bottom: 115px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 95px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-right: 20px;
-  }
+  } */
 }
 
 @media screen and (min-width: 450px) {
@@ -934,11 +939,11 @@ li .social-media {
     margin-bottom: 155px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 110px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     margin-right: 30px;
   }
@@ -949,7 +954,7 @@ li .social-media {
 
   .second-part {
     font-size: 20px;
-  }
+  } */
 }
 
 @media screen and (min-width: 561px) {
@@ -957,11 +962,11 @@ li .social-media {
     margin-bottom: 145px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 140px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-right: 50px;
   }
@@ -973,7 +978,7 @@ li .social-media {
 
   .second-part {
     font-size: 30px;
-  }
+  } */
 }
 
 @media screen and (min-width: 672px) {
@@ -984,11 +989,11 @@ li .social-media {
     margin-bottom: 135px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 165px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-right: 50px;
   }
@@ -999,7 +1004,7 @@ li .social-media {
 
   .second-part {
     font-size: 35px;
-  }
+  } */
 }
 
 @media screen and (min-width: 848px) {
@@ -1007,11 +1012,11 @@ li .social-media {
     margin-bottom: 120px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 215px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-top: 10px;
     padding-right: 100px;
@@ -1023,7 +1028,7 @@ li .social-media {
 
   .second-part {
     font-size: 45px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {
@@ -1034,11 +1039,11 @@ li .social-media {
     margin-bottom: 110px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 265px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-top: 10px;
     padding-right: 100px;
@@ -1050,7 +1055,7 @@ li .social-media {
 
   .second-part {
     font-size: 50px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1148px) {
@@ -1058,11 +1063,11 @@ li .social-media {
     margin-bottom: 100px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 295px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-top: 10px;
     padding-right: 100px;
@@ -1074,7 +1079,7 @@ li .social-media {
 
   .second-part {
     font-size: 60px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1294px) {
@@ -1082,11 +1087,11 @@ li .social-media {
     margin-bottom: 90px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 335px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-top: 10px;
     padding-right: 100px;
@@ -1098,7 +1103,7 @@ li .social-media {
 
   .second-part {
     font-size: 70px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
@@ -1109,11 +1114,11 @@ li .social-media {
     margin-bottom: 75px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 360px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-top: 10px;
     padding-right: 100px;
@@ -1125,7 +1130,7 @@ li .social-media {
 
   .second-part {
     font-size: 70px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1600px) {
@@ -1133,11 +1138,11 @@ li .social-media {
     margin-bottom: 65px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 410px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-top: 10px;
     padding-right: 120px;
@@ -1149,7 +1154,7 @@ li .social-media {
 
   .second-part {
     font-size: 80px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1760px) {
@@ -1157,9 +1162,9 @@ li .social-media {
     margin-bottom: 50px;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 450px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1920px) {
@@ -1167,11 +1172,11 @@ li .social-media {
     margin-bottom: 0;
   }
 
-  .text-container-background {
+  /* .text-container-background {
     top: 500px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-top: 10px;
     padding-right: 180px;
@@ -1183,15 +1188,15 @@ li .social-media {
 
   .second-part {
     font-size: 90px;
-  }
+  } */
 }
 
 @media screen and (min-width: 2260px) {
-  .text-container-background {
+  /* .text-container-background {
     top: 580px;
-  }
+  } */
 
-  .first-part,
+  /* .first-part,
   .second-part {
     padding-right: 240px;
   }
@@ -1202,14 +1207,14 @@ li .social-media {
 
   .second-part {
     font-size: 120px;
-  }
+  } */
 }
 
 /* END OF MEDIA QUERYS ONLY FOR OUR SOLUTIONS IMAGES PART */
 
 .our-solutions-background {
   position: relative;
-  margin-top: -200px;
+  margin-top: -240px;
 }
 
 .our-solutions-texts {
@@ -1324,7 +1329,7 @@ li .social-media {
 .our-solutions-title-container .title-container {
   padding-left: 10%;
   padding-right: 10%;
-  top: -235px;
+  top: -275px;
 }
 
 .our-solutions-title-container .title-container p {
@@ -1333,7 +1338,7 @@ li .social-media {
 
 .man-shade {
   background: #fff;
-  height: 7.16%;
+  height: 5.85%;
   width: 100%;
 
   position: absolute;
