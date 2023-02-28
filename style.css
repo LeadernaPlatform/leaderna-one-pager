@@ -1694,12 +1694,12 @@ p.text-pad {
   align-items: center;
   justify-items: center;
   z-index: 10;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
   background: #fff;
   color: var(--blue-font);
+  flex-direction: column;
 
-  flex-direction: row;
   padding-bottom: 75px;
 }
 
@@ -1707,12 +1707,8 @@ div.makes-us-different-tile:nth-of-type(3) div.makes-us-different-tile-image {
   width: 300px;
 }
 
-div.makes-us-different-tile:nth-of-type(5) {
-  margin-right: 120px;
-}
-
 .makes-us-different-tile .straight-line {
-  display: block;
+  display: none;
 }
 
 .makes-us-different-tile:nth-child(2n + 1) {
@@ -1751,41 +1747,51 @@ div.makes-us-different-tile:nth-of-type(5) {
 }
 
 .makes-us-different-tile .horizontal-line {
-  display: none;
+  display: block;
   width: 300px;
   margin-top: 20px;
 }
 
 .makes-us-different-tiles-container .title-container {
   top: -135px;
-  left: 6.766%;
+  left: 2.766%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .makes-us-different-tiles-container .title-container p {
-  font-size: 2em;
+  font-size: 0.6em;
 }
 
 @media screen and (min-width: 450px) {
-  /* .makes-us-different-tiles-container .title-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    top: -25px;
-  }
 
   .makes-us-different-tiles-container .title-container p {
     font-size: 0.8em;
   }
-
+  .makes-us-different-tiles-container .title-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    top: -135px;
+    left: 2.766%;
+    
+  }
   .makes-us-different-tile .horizontal-line {
     width: 300px;
-  } */
+  }
+
+  .makes-us-different-tile {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media screen and (min-width: 672px) {
-  /* .makes-us-different-tiles-container .title-container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    top: -30px;
+  .makes-us-different-tiles-container .title-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    top: -135px;
+    left: 2.766%;
+    
   }
 
   .makes-us-different-tiles-container .title-container p {
@@ -1793,8 +1799,38 @@ div.makes-us-different-tile:nth-of-type(5) {
   }
 
   .makes-us-different-tile {
+    flex-direction: column;
+    padding-bottom: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .makes-us-different-tile-texts {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .makes-us-different-tiles-container .title-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    top: -135px;
+    left: 2.766%; 
+  }
+
+  .makes-us-different-tiles-container .title-container p {
+    font-size: 1.5em;
+  }
+
+  div.makes-us-different-tile:nth-of-type(5) {
+    margin-right: 120px;
+  }
+
+  .makes-us-different-tile {
     flex-direction: row;
     padding-bottom: 75px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
   .makes-us-different-tile .straight-line {
@@ -1804,62 +1840,36 @@ div.makes-us-different-tile:nth-of-type(5) {
   .makes-us-different-tile .horizontal-line {
     display: none;
   }
-
-  .makes-us-different-tile-texts {
-    padding: 0;
-  } */
-}
-
-@media screen and (min-width: 1024px) {
-  /* .makes-us-different-tile-texts {
-    font-size: 25px;
-    line-height: 50px;
-  }
-
-  .makes-us-different-tiles-container {
-    padding-top: 200px;
-  }
-
-  .makes-us-different-tiles-container .title-container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    top: -40px;
-  }
-
-  .makes-us-different-tiles-container .title-container p {
-    font-size: 2em;
-  } */
 }
 
 @media screen and (min-width: 1148px) {
-  /* .makes-us-different-tiles-container .title-container {
+  .makes-us-different-tiles-container .title-container {
     padding-left: 4rem;
     padding-right: 4rem;
-  } */
+    top: -135px;
+    left: 2.766%;
+    
+  }
+  .makes-us-different-tiles-container .title-container p {
+    font-size: 2em;
+  }
 }
 
 @media screen and (min-width: 1440px) {
 }
 
 @media screen and (min-width: 1600px) {
-  /* .makes-us-different-tiles-container .title-container {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  } */
+  .makes-us-different-tiles-container .title-container {
+    top: -135px;
+    left: 6.766%;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-  /* .makes-us-different-section {
-    background-color: #fff;
-  }
-
   .makes-us-different-tiles-container .title-container {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    top: -135px;
+    left: 6.766%;
   }
-  .makes-us-different-tiles-background {
-    background: transparent;
-  } */
 }
 
 /* END OF WHAT MAKES US DIFFERENT */
