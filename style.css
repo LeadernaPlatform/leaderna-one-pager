@@ -1526,9 +1526,9 @@ p.text-pad {
   top: 0px;
 }
 
-.makes-us-different-background {
+/* .makes-us-different-background {
   display: none;
-}
+} */
 .makes-us-different-description-container {
   grid-template-columns: minmax(150px, 1fr);
   padding-top: 60px;
@@ -1546,8 +1546,14 @@ p.text-pad {
 .makes-us-different-description-text-container span {
   font-size: 15px;
 }
+.makes-us-different-background {
+  display: none;
+}
 
 @media screen and (min-width: 450px) {
+  .makes-us-different-background {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 672px) {
@@ -1581,7 +1587,12 @@ p.text-pad {
 @media screen and (min-width: 1024px) {
   .makes-us-different-title {
     font-size: 30px;
-    top: 50px;
+    top: -70px;
+  }
+  .makes-us-different-background {
+    display: block;
+    top: -120px;
+
   }
 
   .makes-us-different-description-text-container {
@@ -1627,7 +1638,7 @@ p.text-pad {
 
    .makes-us-different-title {
     font-size: 30px;
-    top: 50px;
+    top: -50px;
   }
 
   .makes-us-different-description-text-container {
@@ -1661,10 +1672,11 @@ p.text-pad {
   .makes-us-different-description-container {
     padding-top: 100px;
     padding-bottom: 150px;
+    
 }
    .makes-us-different-title {
     font-size: 40px;
-    top: 70px;
+    top: -40px;
   }
 
   .makes-us-different-description-text-container span {
@@ -1726,10 +1738,11 @@ p.text-pad {
   .makes-us-different-description-container {
     padding-top: 100px;
     padding-bottom: 150px;
+    background-color: transparent;
 }
    .makes-us-different-title {
     font-size: 40px;
-    top: 100px;
+    top: -10px;
   }
 /*
   .makes-us-different-description-text-container {
@@ -1759,6 +1772,10 @@ p.text-pad {
   .makes-us-different-description-container {
     padding-top: 200px;
     padding-bottom: 180px;
+}
+
+.makes-us-different-title {
+  top: 10px;
 }
   /* .makes-us-different-description-container {
     padding-top: 200px;
