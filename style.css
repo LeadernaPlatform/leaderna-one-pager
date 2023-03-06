@@ -1262,7 +1262,7 @@ div.image-container.man img {
 
 .our-solutions-choose-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-self: center;
   align-self: center;
 }
@@ -1270,8 +1270,8 @@ div.image-container.man img {
 .our-solutions-choose-texts {
   position: relative;
   font-size: 22px;
-  padding-left: 125px;
   z-index: 1003;
+  padding-bottom: 75px;
 }
 
 .our-solutions-choose-texts p {
@@ -1311,6 +1311,7 @@ div.image-container.man img {
   width: 100%;
   padding-left: 150px;
   z-index: 1003;
+  padding-bottom: 100px;
 }
 
 .our-solutions-title-container .title-container {
@@ -1335,7 +1336,7 @@ div.image-container.man img {
 }
 
 @media screen and (min-width: 450px) {
-  /* .our-solutions-choose-diff-text {
+  .our-solutions-choose-diff-text {
     padding-bottom: 0;
     margin-left: 50px;
   }
@@ -1345,38 +1346,44 @@ div.image-container.man img {
   }
 
   .our-solutions-title-container .title-container {
-    top: -210px;
+    top: -220px;
     font-size: 12px;
-    padding: 0 1rem;
+    padding: 0 0.7rem;
   }
 
   .our-solutions-title-container .title-container p {
     padding: 5px;
-  } */
+  }
 }
 
 @media screen and (min-width: 510px) {
-  /* .our-solutions-title-container {
+  .our-solutions-title-container {
     background: transparent;
-  } */
+  }
 }
 
 @media screen and (min-width: 672px) {
-  /* .our-solutions-title-container .title-container {
+  .our-solutions-title-container .title-container {
     padding-left: 3rem;
     padding-right: 3rem; 
     top: -215px;
   }
 
   .our-solutions-title-container .title-container p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 5px 0;
-  } */
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  /* .our-solutions-choose-container {
+  .our-solutions-choose-container {
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+  }
+
+  .our-solutions-choose-texts {
+    padding-left: 125px;
+    padding-bottom: 0;
   }
 
   .our-solutions-choose-diff-text {
@@ -1396,7 +1403,11 @@ div.image-container.man img {
 
   .our-solutions-title-container .title-container p {
     font-size: 2em;
-  } */
+  }
+
+  .our-solutions-choose-image {
+    padding-bottom: 0px;
+  }
 }
 
 /* END OF OUR SOLUTIONS */
