@@ -503,7 +503,7 @@ li .social-media {
 
 .study-conduct-container {
   display: grid;
-  grid-template-columns: minmax(100px, 375px) minmax(150px, 1fr);
+  grid-template-columns: minmax(100px, 375px);
   z-index: 200;
   position: relative;
 }
@@ -536,14 +536,14 @@ li .social-media {
 
   grid-column: span 1;
   justify-self: flex-end;
-  margin-top: 100px;
-  margin-right: 200px;
+  margin-top: 30px;
+  margin-right: 100px;
   padding: 10px;
 }
 
 .study-conduct-text p {
-  font-size: 3.7em;
-  line-height: 65px;
+  font-size: 1.7em;
+  line-height: 35px;
   margin: 0;
   text-align: right;
 }
@@ -554,13 +554,13 @@ li .social-media {
 
 .study-conduct-text p:nth-of-type(2) {
   color: #0381ff;
-  font-size: 5em;
+  font-size: 2em;
   font-weight: 500;
 }
 
 .study-conduct-text p:nth-of-type(3) {
   font-weight: 700;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 .study-conduct-big-image {
@@ -568,7 +568,7 @@ li .social-media {
   width: 70%;
   text-align: center;
   background-color: #fff;
-  margin: 0 auto 250px auto;
+  margin: 100px auto 100px auto;
 }
 
 .study-conduct-big-image svg {
@@ -577,13 +577,29 @@ li .social-media {
   margin-top: -100px;
 }
 
-/* @media screen and (min-width: 450px) {
+@media screen and (min-width: 450px) {
   .study-conduct-background {
     top: -110px;
+  }
+  .study-conduct-big-image {
+    margin: 100px auto 100px auto;
+    width: 40%;
   }
 
   .study-conduct-container .title-container {
     top: -135px;
+  }
+  .study-conduct-text p {
+    font-size: 2em;
+    line-height: 65px;
+  }
+  
+  .study-conduct-text p:nth-of-type(2) {
+    font-size: 3.3em;
+  }
+  
+  .study-conduct-text p:nth-of-type(3) {
+    font-size: 2.3em;
   }
 }
 
@@ -597,9 +613,44 @@ li .social-media {
   .study-conduct-container .title-container p {
     font-size: 1.2em;
   }
+  .study-conduct-big-image {
+    margin: 150px auto 200px auto;
+  }
+  .study-conduct-text p {
+    font-size: 2.7em;
+  }
+  
+  .study-conduct-text p:nth-of-type(2) {
+    font-size: 4em;
+  }
+  
+  .study-conduct-text p:nth-of-type(3) {
+    font-size: 3em;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .study-conduct-text p {
+    font-size: 3.7em;
+  }
+  
+  .study-conduct-text p:nth-of-type(2) {
+    font-size: 5em;
+  }
+  
+  .study-conduct-text p:nth-of-type(3) {
+    font-size: 4em;
+  }
+
+  .study-conduct-big-image {
+    margin: 100px auto 250px auto;
+    width: 70%;
+  }
+
+  .study-conduct-container {
+    grid-template-columns: minmax(100px, 375px) minmax(150px, 1fr);
+  }
+
   .study-conduct-image {
     display: block;
   }
@@ -639,12 +690,18 @@ li .social-media {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+  .study-conduct-big-image {
+    margin: 100px auto 250px auto;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .study-conduct-container .title-container {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+  .study-conduct-big-image {
+    margin: 0 auto 250px auto;
   }
 }
 
@@ -653,7 +710,7 @@ li .social-media {
     padding-left: 10rem;
     padding-right: 10rem;
   }
-} */
+}
 
 /* END OF STUDY CONDUCT CHALLENGES */
 
