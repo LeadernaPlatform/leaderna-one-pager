@@ -169,7 +169,6 @@ header {
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
-  color:#000;
 }
 
 .navigation-container p {
@@ -192,11 +191,17 @@ header {
 
 .social-media {
   display: none;
-  grid-template-columns: repeat(3, 25px);
+  grid-template-columns: 100%;
+  /* grid-template-columns: repeat(3, 25px); */
   gap: 20px;
   align-self: center;
   justify-self: center;
   justify-content: center;
+}
+
+.social-media a:first-of-type, 
+.social-media a:last-of-type {
+  display: none;
 }
 
 li .social-media {
@@ -264,7 +269,8 @@ li .social-media {
 
   header .social-media {
     display: grid;
-    grid-template-columns: repeat(3, 20px);
+   grid-template-columns: 100%;
+    /* grid-template-columns: repeat(3, 20px); */
     gap: 15px;
     align-self: center;
     justify-self: center;
@@ -621,9 +627,8 @@ li .social-media {
 }
 
 .study-conduct-big-image {
-  width: 70%;
+  width: 100%;
   text-align: center;
-  background-color: #fff;
   margin: 20px auto;
 }
 
@@ -707,16 +712,14 @@ li .social-media {
 
   .study-conduct-big-image {
     grid-column: span 2;
-    width: 70%;
+    width: 100%;
     text-align: center;
-    background-color: #fff;
-    margin: 100px auto;
+    margin: 0px auto;
   }
   
   .study-conduct-big-image svg {
-    max-width: 75vw;
-    padding-right: 5vw;
-    margin-top: -100px;
+    max-width: 80%;
+    margin-top: -20px;
   }
 }
 
@@ -734,8 +737,13 @@ li .social-media {
   }
 
   .study-conduct-big-image {
-    margin: 50px auto 250px auto;
-    width: 80%;
+    margin: -50px auto 50px auto;
+    width: 100%;
+  }
+
+  .study-conduct-big-image svg {
+    max-width: 70%;
+    margin-top: -20px;
   }
 
   .study-conduct-container {
@@ -793,7 +801,7 @@ li .social-media {
     padding-right: 6rem;
   }
   .study-conduct-big-image {
-    margin: 0 auto 250px auto;
+    margin: -20 auto 250px auto;
   }
 }
 
@@ -1559,7 +1567,8 @@ line-height: 150%;
   grid-template-columns: 1fr;
   justify-self: center;
   align-self: center;
-  max-width: 1500px;
+  max-width: 1700px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 8.33%, rgba(236, 236, 236, 0.7) 51.04%, rgba(255, 255, 255, 0) 90.62%);
 }
 
 .our-solutions-choose-texts {
@@ -1604,10 +1613,18 @@ line-height: 150%;
 }
 
 .our-solutions-choose-image {
+  display: flex;
   max-width: 850px;
-  width: 100%;
-  padding: 0 0 50px 50px ;
-  z-index: 1003;
+  padding: 0 ;
+  /* padding: 0 0 50px 50px ; */
+  z-index: 1002;
+}
+
+.our-solutions-choose-image svg {
+  width:100%;
+  height: auto;
+  margin-top: -100px;
+
 }
 
 .our-solutions-title-container .title-container {
@@ -1669,14 +1686,15 @@ line-height: 150%;
   }
 
   .our-solutions-choose-image {
-    padding: 0 150px 100px 150px ;
+    padding: 0 50px 50px 150px ;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .our-solutions-choose-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     padding-bottom: 100px;
+    background: none;
   }
 
   .our-solutions-choose-texts {
@@ -1705,8 +1723,16 @@ line-height: 150%;
   }
 
   .our-solutions-choose-image {
-    padding: 0px 0px 0px 150px ;
+    padding: 0px 0px 0px 0px ;
+    width: 100%;
+    position: relative;
   }
+  .our-solutions-choose-image svg {
+    position: relative;
+  top: -10%;
+  left:-10%;
+  }
+  
 
   .our-solutions-texts {
     position: relative;
@@ -3528,9 +3554,12 @@ div.maps-for-research-youtube-predefined:nth-of-type(2)
   flex-direction: column;
 }
 
+.contact-icons .twitter , .contact-icons .youtube {
+  display: none;
+}
+
 .contact-info-image {
   position: relative;
-
   max-width: 150px;
   margin: 0 75px;
   margin-bottom: 40px;
@@ -3597,10 +3626,11 @@ div.maps-for-research-youtube-predefined:nth-of-type(2)
 
 .contact-icons {
   display: grid;
-  grid-template-columns: repeat(3, 40px);
+  grid-template-columns: 100%;
+  /* grid-template-columns: repeat(3, 40px); */
   gap: 25px;
   width: 100%;
-  justify-content: space-evenly;
+  justify-items: center;
   max-width: 400px;
 }
 
@@ -3608,6 +3638,7 @@ div.maps-for-research-youtube-predefined:nth-of-type(2)
   display:flex;
   align-items: center;
   justify-content: center;
+  width: 40px;
 }
 .icon a {
   width: 100%;
@@ -3663,7 +3694,6 @@ div.maps-for-research-youtube-predefined:nth-of-type(2)
 @media screen and (min-width: 672px) {
   .contact-info {
     font-size: 22px;
-    flex-direction: column;
     justify-content: center;
   }
   .contact-title {
@@ -3736,7 +3766,10 @@ div.maps-for-research-youtube-predefined:nth-of-type(2)
     gap: 20px;
     width: auto;
     justify-content: center;
+    padding-bottom: 10px;
   }
+
+  
 
  
 }
