@@ -666,6 +666,9 @@ li .social-media {
   .study-conduct-text p:nth-of-type(3) {
     font-size: 2.3em;
   }
+  .test {
+    font-size: 2rem;
+  }
 } */
 
 @media screen and (min-width: 767px) {
